@@ -13,7 +13,6 @@ export default (timeString) => {
     //          }
     //          flooredTime--
     //      }
-    let funcArray = timeArray.fill().map(() => (flooredTime-- > 0 ? 'R' : 'O'))
-    return funcArray.join('')
+    return (timeArray.fill().map(() => (flooredTime-- > 0 ? 'R' : 'O'))).join('')
         
 }

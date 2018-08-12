@@ -13,6 +13,5 @@ export default (timeString) => {
 //     }
 //    return timeArray.join('')
 
-    let funcArray = timeArray.fill().map(() => (remainder-- > 0 ? 'R' : 'O'))
-    return funcArray.join('')
+    return (timeArray.fill().map(() => (remainder-- > 0 ? 'R' : 'O'))).join('')
 }

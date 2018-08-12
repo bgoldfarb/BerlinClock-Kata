@@ -9,6 +9,5 @@ export default (timeString) => {
     // for(let i = 0; i < 4; i++){
     //     remainder-- > 0 ?  timeArray.push('Y') :  timeArray.push('O')
     // }
-    let funcArray = timeArray.fill().map(() => (remainder-- > 0 ? 'Y' : 'O'))
-    return funcArray.join('')
+    return (timeArray.fill().map(() => (remainder-- > 0 ? 'Y' : 'O'))).join('')
 }

@@ -18,9 +18,6 @@ export default (timeString) => {
     //      convertedToIntTime--
     // }
     // return timeArray.join('')
-    let funcArray = timeArray.fill().map((_, i) => {
-        return (convertedToIntTime-- > 0 ? (((i+1) % 3) === 0 ? 'R' : 'Y') : 'O')
-    })
-    return funcArray.join('')
+    return (timeArray.fill().map((_, i) => (convertedToIntTime-- > 0 ? (((i+1) % 3) === 0 ? 'R' : 'Y') : 'O'))).join('')
 }
 
