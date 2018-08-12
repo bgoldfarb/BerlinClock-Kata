@@ -10,7 +10,6 @@ import convertSeconds from './berlin-clock-seconds'
 
 export default (timeString) => {
     let noColons = timeString.replace(/[^\w\s]/gi, '')
-    console.log(noColons)
     let secondString = convertSeconds(noColons.substring(4,6))
     let fiveHourString = convertFiveHours(noColons.substring(0,2))
     let hourString = convertSingleHours(noColons.substring(0,2))
