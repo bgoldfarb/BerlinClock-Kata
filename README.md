@@ -1,3 +1,4 @@
-# string-calculator
+# Berlin Clock Kata
 
-This program calculates mathmatical equations that are written as strings
+
+http://agilekatas.co.uk/katas/BerlinClock-Kata
